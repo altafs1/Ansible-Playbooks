@@ -1,0 +1,17 @@
+---
+
+- hosts: jenkinsserver
+
+  tasks:
+
+    - name: Git checkout
+
+      git:
+
+        repo: 'https://github.com/altafs1/SpringBootMavenWebApp.git'
+
+        dest: ~/ansible/workspace/myproject/
+
+    - name: maven clean package
+
+      command: mvn -f ~/ansible/workspace/myproject/pom.xml clean package
