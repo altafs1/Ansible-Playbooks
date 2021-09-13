@@ -12,6 +12,6 @@
 
       copy:
 
-        src: ~/ansible/workspace/myproject/target/SpringBootMavenWebApp-0.0.2-SNAPSHOT.war
+        src: /tmp/SpringBootMavenWebApp-0.0.2-SNAPSHOT.war
 
         dest: /var/www/html/
