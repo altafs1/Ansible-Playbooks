@@ -1,5 +1,5 @@
 [webservers]
-ec2-3-95-31-39.compute-1.amazonaws.com
-ec2-54-211-9-195.compute-1.amazonaws.com
+ec2-34-207-162-149.compute-1.amazonaws.com
+ec2-54-80-48-223.compute-1.amazonaws.com
 [jenkinsserver]
 127.0.0.1
