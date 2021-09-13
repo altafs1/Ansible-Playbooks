@@ -1,17 +1,15 @@
 - hosts: webservers
 
-
-
   tasks:
 
-
-
     - name: copying file with playbook
-
       become: true
-
       copy:
-
         src: /tmp/SpringBootMavenWebApp-0.0.2-SNAPSHOT.war
-
         dest: /var/www/html/
+      notify:
+         - restart apache2
+
+  handlers:
+    - name: restart apache2
+      service: name=apache2 state=restarted
