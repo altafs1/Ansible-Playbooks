@@ -1,3 +1,4 @@
+
 ---
 
 - hosts: jenkinsserver
@@ -15,3 +16,7 @@
     - name: maven clean package
 
       command: mvn -f ~/ansible/workspace/myproject/pom.xml clean package
+
+    - name: copy war file
+
+      command: cp -f ~/ansible/workspace/myproject/target/SpringBootMavenWebApp-0.0.2-SNAPSHOT.war /tmp/
